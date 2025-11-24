@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<title>Admission Form</title>
+		<link rel="stylesheet" type="text/css" href="AdmissionForm.css">
+	</head>
+	<body>
+		<video autoplay loop muted>
+			<source src="Aurora.mp4" type="video/mp4">
+		</video>
+		<form name = "myForm" method = "GET">
+			<div class="col-3">
+				<h2>Personal Information</h2>
+						<label class="text"for = "firstname">First name:</label>
+						<input type = "text" name = "firstname"/>
+						<label class="text"for = "lastname">Last name:</label>
+						<input type = "text" name = "lastname"/>
+						<label class="text"for = "middlename">Middle name:</label>
+						<input type = "text" name = "middlename" maxlength = "1" style = "max-width: 150px"/>
+						<label class="Age"for = "age">Age:</label>
+						<input type = "Age" name = "age" style = "max-width: 35px" maxlength = "3"/>
+						<label class="text"for = "gender">Gender:</label>
+						<input type = "radio" name = "gender" value ="Male"/>Male
+						<input type = "radio" name = "gender" value ="Female"/>Female
+						<label class="Religion"for = "religion">Religion:</label>
+						<input type = "Religion" name = "religion" style = "max-width: 500px;"/>
+						<label class="text"for = "father">Father's name:</label>
+						<input type = "text" name = "father" style = "max-width: 180px;"/>
+						<label class="text"for = "work">Occupiation:</label>
+						<input type = "text" name = "work"/>
+						<label class="text"for = "mother">Mother's name:</label>
+						<input type = "text" name = "mother" style = "max-width: 180px;"/>
+						<label class="text"for = "work">Occupiation:</label>
+						<input type = "text" name = "work"/>
+						<h4>Address</h4>
+						<label class="text"for = "sitio">Sitio:</label>
+						<input type = "text" name = "sitio" style = "max-width: 450px"/>
+						<label class="text"for = "brgy">Baranggay:</label>
+						<input type = "text" name = "brgy" style = "max-width: 450px"/>
+						<label class="text"for = "city">City:</label>
+						<input type = "text" name = "city" style = "max-width: 450px"/>
+						<label class="text"for = "zip">Zip Code:</label>
+						<input type = "text" name = "zip" maxlength = "4" style = "max-width: 50px;"/>
+						<label class="text"for = "national">Nationality:</label>
+						<input text = "text" name = "national"/>
+						<td><h3>Educational Attainment</h3></td>
+						<label class="text"for = "elem">Elementary:</label>
+						<input type = "text" name = "elem"/>
+						<label class="text"for = "year">Year graduated:</label>
+						<input type = "text" name = "year"/>
+						<label class="text"for = "jr">Junior High:</label>
+						<input type = "text" name = "jr"/>
+						<label class="text"for = "year">Year graduated:</label>
+						<input type = "text" name = "year"/>
+						<label class="text"for = "sr">Senior High:</label>
+						<input type = "text" name = "jr" style = "max-width: 1000px;"/>
+						<label class="text"for = "year">Year graduated:</label>
+						<input type = "text" name = "year"/>
+			</div>
+			<div class="popup" onclick="myFunction()">
+				<span class="popuptext" id="myPopup">Sorry Currently Not Availabe Still Under Development by James Bryan Ararao</span>
+			<input type = "button" name = "btnSubmit" value = "Submit"/>
+			<input type = "button" name = "btnCancel" value = "Cancel"/>
+		</div>
+		<div class="col-4">
+			<nav class = "col-nav">
+					<table class="nav-list">
+						<tr class="nav-item">
+							<td>
+							<a class ="nav-link active" href="homepage3.html">Home</a>
+							</td>
+							<td>
+							<a class="nav-link" href="AdmissionForm.html">Admission</a>
+							</td>
+						<td>
+							<a class="nav-link" href="news.html">News</a>
+							</td>
+						<td>
+							<a class="nav-link" href="schedule.html">Schedule</a>
+							</td>
+						<td>
+							<a class="nav-link" href="course.html">Courses</a>
+							</td>
+						<td>
+							<a class="nav-link" href="login.html">Login</a>
+							</td>
+						</tr>
+					</table> 
+				</nav>
+		</div>
+		<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+		<div class="col-1">
+						<img class="img" src="logo.png" alt="CECLogo">
+					</div>
+                <footer class="col-footer" style="padding-bottom:1px; padding-top: 8px">
+					<p class="h6 col-sm-12">Copyright &copy; IT WST12 2023 Designed by:<br>
+							<a href="https://web.facebook.com/james.soriano.90410">James Bryan S. Ararao</a>
+							<a href="http://jigsaw.w3.org/css-validator/">CSS</a>
+							<a href="http://validator.w3.org/">HTML5</a>
+							<a href="slideautoTW.html">TWICE</a>
+						</p>
+                </footer>
+			</form>
+	</body>
+</html>

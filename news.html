@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>News</title>
+		<link rel="stylesheet" type="text/css" href="news.css">
+		<script type="text/javascript" src="news.js"></script>
+	</head>
+	<body>
+		<video autoplay loop muted>
+			<source src="123.mp4" type="video/mp4">
+		</video>
+		
+		<div class="col-4">
+			<nav class = "col-nav">
+					<table class="nav-list">
+						<tr class="nav-item">
+							<td>
+							<a class ="nav-link active" href="homepage2.html">Home</a>
+							</td>
+							<td>
+							<a class="nav-link" href="course.html">Courses</a>
+							</td>
+						<td>
+							<a class="nav-link" href="news.html">News</a>
+							</td>
+						<td>
+							<a class="nav-link" href="schedule.html">Schedule</a>
+							</td>
+						<td>
+							<a class="nav-link" href="AdmissionForm.html">Admission</a>
+							</td>
+
+						</tr>
+					</table> 
+				</nav>
+		</div>
+		<div class="col-2">
+			<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    <script type="text/javascript">
+    	function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+
+showTime();
+    </script>
+		</div>
+		<div class="col-1">
+						<img class="img" src="logo.png" alt="CECLogo">
+					</div>
+                <footer class="col-footer" style="padding-bottom:1px; padding-top: 8px">
+					<p class="h6 col-sm-12">Copyright &copy; IT WST12 2023 Designed by:<br>
+							<a href="https://web.facebook.com/james.soriano.90410">James Bryan S. Ararao</a>
+							<a href="http://jigsaw.w3.org/css-validator/">CSS</a>
+							<a href="http://validator.w3.org/">HTML5</a>
+							<a href="slideautoTW.html">TWICE</a>
+						</p>
+                </footer>
+			</form>
+	</body>
+</html>

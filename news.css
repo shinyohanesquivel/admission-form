@@ -1,0 +1,209 @@
+div{
+  top:52em;
+  right: 39em;
+  height: 5em;
+  position: absolute;
+}
+body{
+  background-color: #4169E1;
+}
+video{
+  position: relative;
+  right: 0.28em;
+  bottom: 0.47em;
+  min-width: 100.63%;
+  min-height: 100%;
+}
+label {
+  display: inline-block;
+  width:200px;
+  text-align: right;
+}
+
+.img {
+  bottom: 51em;
+  right: 38.79em;
+  height: 100px;
+  position: absolute;
+
+}
+.col-footer p{
+  height:0em;
+  margin-top: 52em;
+  position: relative;
+  top: 1em;
+  text-align: center;
+}
+.nav-item {
+
+  list-style-type:none;
+  display:inline-block;
+  padding:15px 20px;
+  letter-spacing:3px;
+  color:#222222;
+  background:linear-gradient(45deg,,#333333);
+  transition:500ms;
+  text-transform:uppercase;
+  position:relative;
+  z-index:3;
+  cursor:pointer;
+  margin: auto;
+
+}
+col-nav{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:linear-gradient(45deg,#ffffff,#dddddd);
+  border-radius:5px;
+  padding:6px;
+  box-shadow:0px 20px 50px rgba(255,192,203 ,1 );
+}
+.nav-item a {
+  top:-45em;
+  left: 22em;
+  margin: 15px;
+  right: 20em;
+  position:relative;
+  color: white;
+  text-align:center;
+    padding: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.nav-link:hover{
+  color:blue;
+  font-weight:700;
+}
+.nav-link:hover:before{
+  background:blue;
+  width:100%;
+  opacity:0;
+}
+.nav-link:before{
+  content:'';
+  width:0%;
+  height:100%;
+  position:absolute;
+  top:0%;
+  left:50%;
+  opacity:1;
+  transform:translateX(-50%);
+  background:blue;
+  transition:300ms;
+  z-index:-1;
+}
+a{
+  list-style-type:none;
+  display:inline-block;
+  padding:15px 20px;
+  letter-spacing:3px;
+  color:#222222;
+  background:linear-gradient(45deg,,#333333);
+  transition:500ms;
+  text-transform:uppercase;
+  position:relative;
+  z-index:3;
+  cursor:pointer;
+}
+.clock {
+    position: relative;
+    top: 0em;
+    bottom: 0em;
+    left: -0.3em;
+    transform: translateX(235%) translateY(-50%);
+    color: #191970;
+    font-size: 40px;
+    font-family: Orbitron;
+    letter-spacing: 5px;  
+
+}
+.mission{
+    background: #6495ED;
+    box-shadow: 1px 2px 36px -6px rgba(0,0,0,1);
+    position: relative;
+    left: 2em;
+  top:5em;
+    bottom: 13em;
+    height:27em;
+    width:20em;
+    color:white;
+
+
+}
+.mission p{
+    position: relative;
+    top: 5em;
+    left: 1em;
+    font-size:20px;
+    width: 14em;
+      overflow: hidden;
+
+}
+.mission h1{
+    position: absolute;
+    left: 1.5em;
+    top: 0.em;
+    color: white;
+      font-size: 50px;
+     font-family: 'Trebuchet MS' ; 
+}
+.goal{
+    background: #6495ED;
+    box-shadow: 1px 2px 36px -6px rgba(0,0,0,1);
+    position: absolute;
+    left: 32.5em;
+    top:54em;
+    height:27em;
+    width:20em;
+    color:white;
+      overflow: hidden;
+
+
+}
+.goal p{
+    position: relative;
+    top: 5em;
+    left: 1em;
+    font-size:20px;
+    width: 14em;
+
+}
+.goal h1{
+    position: absolute;
+    left: 2em;
+    top: 0.2em;
+    color: white;
+      font-size: 50px;
+     font-family: 'Trebuchet MS' ; 
+}
+.vision{
+    background: #6495ED;
+    box-shadow: 1px 2px 36px -6px rgba(0,0,0,1);
+    position: absolute;
+    left: 62em;
+    top:54em;
+    height:27em;
+    width:20em;
+    color:white;
+    overflow: hidden;
+}
+
+.vision p{
+    position: relative;
+    top: 5em;
+    left: 1em;
+    font-size:20px;
+    width: 14em;
+
+}
+.vision h1{
+    position: absolute;
+    left: 1.5em;
+    top: 0.2em;
+    color: white;
+      font-size: 50px;
+     font-family: 'Trebuchet MS' ; 
+}

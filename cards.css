@@ -1,0 +1,280 @@
+:root {
+  --card-height: 300px;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+* {
+  box-sizing: border-box;
+}
+.alon{
+  position: absolute;
+  top: 9em;
+  bottom: ;
+  left: 2.6em;
+  font-size: 45px;
+  color: #4B0082;
+}
+.kerniel{
+  position: absolute;
+  top: 9em;
+  bottom: ;
+  left: 8.8em;
+  font-size: 45px;
+  color: white;
+}
+.lloyd{
+  position: absolute;
+  top: 9em;
+  bottom: ;
+  left: 36em;
+  font-size: 45px;
+  color: red;
+}
+.neilson{
+  position: absolute;
+  top: 9em;
+  bottom: ;
+  left: 23em;
+  font-size: 45px;
+  color: pink;
+}
+.james{
+  position: absolute;
+  top: 9em;
+  bottom: ;
+  left: 29.4em;
+  font-size: 45px;
+  color: #F5F5DC;
+}
+.nino{
+  position: absolute;
+  top: 9em;
+  bottom: ;
+  left: 16.1em;
+  font-size: 45px;
+  color: #A020F0;
+}
+.mhar{
+  position: absolute;
+  top: 9em;
+  bottom: ;
+  left: 42.7em;
+  font-size: 45px;
+  color: #A020F0;
+  
+}
+
+.mariscal{
+  position: absolute;
+  top: 9em;
+  bottom: ;
+  left: 48.7em;
+  font-size: 45px;
+  color: #A020F0;
+}
+
+.germain{
+  position: absolute;
+  top: 9em;
+  bottom: ;
+  left: 55.2em;
+  font-size: 45px;
+  color: #f020a0;
+}
+body {
+  width: 157%;
+  height: 80vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet,red);
+}
+.card {
+  width: var(--card-width);
+  height: 270px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+  margin: 0 50px;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+}
+.wrapper::before {
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+.wrapper::after {
+  bottom: 0;
+  opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+
+.card:hover .wrapper::before,
+.wrapper::after {
+  opacity: 1;
+}
+
+.card:hover .wrapper::after {
+  height: 120px;
+}
+.title {
+  width: 100%;
+  transition: transform 0.5s;
+}
+.card:hover .title {
+  transform: translate3d(0%, -50px, 100px);
+}
+
+.character {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+
+.card:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
+div:hover {
+  background: #00FFFF;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #00FFFF,
+              0 0 25px #00FFFF,
+              0 0 50px #00FFFF,
+              0 0 100px #00FFFF;
+}
+.alon:hover {
+  background: #4B0082;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #4B0082,
+              0 0 25px #4B0082,
+              0 0 50px #4B0082,
+              0 0 100px #4B0082;
+}
+.kerniel:hover {
+  background: white;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px white,
+              0 0 25px white,
+              0 0 50px white,
+              0 0 100px white;
+}
+.nino:hover {
+  background: #A020F0;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #A020F0,
+              0 0 25px #A020F0,
+              0 0 50px#A020F0,
+              0 0 100px #A020F0;
+}
+.neilson:hover {
+  background: pink;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px pink,
+              0 0 25px pink,
+              0 0 50px pink,
+              0 0 100px pink;
+}
+.james:hover {
+  background: #F5F5DC;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #F5F5DC,
+              0 0 25px #F5F5DC,
+              0 0 50px #F5F5DC,
+              0 0 100px #F5F5DC;
+}
+.lloyd:hover {
+  background: red;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px red,
+              0 0 25px red,
+              0 0 50px red,
+              0 0 100px red;
+}
+.mhar:hover {
+  background: #A020F0;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #A020F0,
+              0 0 25px #A020F0,
+              0 0 50px #A020F0,
+              0 0 100px #A020F0;
+}
+.mariscal:hover {
+  background: #6ce6b7;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #6ce6b7,
+              0 0 25px #6ce6b7,
+              0 0 50px #6ce6b7,
+              0 0 100px #6ce6b7;
+}
+
+.germain:hover {
+  background: pink;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px pink,
+              0 0 25px pink,
+              0 0 50px pink,
+              0 0 100px pink;
+}
+.col-footer p{
+  height:0em;
+  margin-top: ;
+  position: absolute;
+  top: 1em;
+  text-align: center;
+}

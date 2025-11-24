@@ -1,0 +1,686 @@
+:root {
+  --card-height: 300px;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+* {
+  box-sizing: border-box;
+}
+.lisa{
+  position: absolute;
+  top: 10.5em;
+  bottom: ;
+  left: 4.3em;
+  font-size: 45px;
+  color: yellow;
+}
+.jisoo{
+  position: absolute;
+  top: 10.5em;
+  bottom: ;
+  left: 10.9em;
+  font-size: 45px;
+  color: purple;
+}
+.jennie{
+  position: absolute;
+  top: 10.5em;
+  bottom: ;
+  left: 17.3em;
+  font-size: 45px;
+  color: red;
+}
+.rose{
+  position: absolute;
+  top: 10.5em;
+  bottom: ;
+  left: 24.25em;
+  font-size: 45px;
+  color: pink;
+}
+.img{
+  position: relative;
+  bottom: 15.5em;
+  left: 50em;
+}
+body {
+  width: 72%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, black, pink);
+}
+.card {
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+  margin: 0 50px;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+}
+.wrapper::before {
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+.wrapper::after {
+  bottom: 0;
+  opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+
+.card:hover .wrapper::before,
+.wrapper::after {
+  opacity: 1;
+}
+
+.card:hover .wrapper::after {
+  height: 120px;
+}
+.title {
+  width: 100%;
+  transition: transform 0.5s;
+}
+.card:hover .title {
+  transform: translate3d(0%, -50px, 100px);
+}
+
+.character {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+
+.card:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
+div:hover {
+  background: #FF10F0;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #FF10F0,
+              0 0 25px #FF10F0,
+              0 0 50px  #FF10F0,
+              0 0 100px  #FF10F0;
+}
+.lisa:hover {
+  background: yellow;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px yellow,
+              0 0 25px yellow,
+              0 0 50px yellow,
+              0 0 100px yellow;
+}
+.jisoo:hover {
+  background: #F2A2E8;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #F2A2E8,
+              0 0 25px #F2A2E8,
+              0 0 50px #F2A2E8,
+              0 0 100px #F2A2E8;
+}
+.jennie:hover {
+  background: red;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px red,
+              0 0 25px red,
+              0 0 50px red,
+              0 0 100px red;
+}
+.rose:hover {
+  background: pink;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px pink,
+              0 0 25px pink,
+              0 0 50px pink,
+              0 0 100px pink;
+}
+.col-footer p{
+  height:0em;
+  margin-top: ;
+  position: absolute;
+  top: 1em;
+  text-align: center;
+}
+h1{
+    position: absolute;
+    z-index: -1;
+    top: -0.08em;
+    left: 15.45em;
+    height: 85px;
+    width: 12.38em;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #FF00FF;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+h1:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+h1:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+h1 span{
+    position: absolute;
+    display: block;
+}
+h1 span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#FF00FF);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+h1 span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#FF00FF);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+h1 span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#FF00FF);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+h1 span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#FF00FF);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+h2{
+    position: absolute;
+    z-index: -1;
+    top: 5.55em;
+    left: 5.65em;
+    height: 308px;
+    width: 204px;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #FF00FF;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+h2:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+h2:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+h2 span{
+    position: absolute;
+    display: block;
+}
+h2 span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,yellow);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+h2 span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,yellow);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+h2 span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,yellow);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+h2 span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,yellow);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+h3{
+    position: absolute;
+    z-index: -1;
+    top: 7.05em;
+    left: 23.265em;
+    height: 309px;
+    width: 204px;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #FF00FF;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+h3:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+h3:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+h3 span{
+    position: absolute;
+    display: block;
+}
+h3 span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,purple);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+h3 span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,purple);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+h3 span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,purple);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+h3 span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,purple);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+h4{
+    position: absolute;
+    z-index: -1;
+    top: 8.5em;
+    left: 46em;
+    height: 305px;
+    width: 204.4px;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #FF00FF;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+h4:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+h4:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+h4 span{
+    position: absolute;
+    display: block;
+}
+h4 span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,red);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+h4 span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,red);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+h4 span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,red);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+h4 span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,red);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+h5{
+    position: absolute;
+    z-index: -1;
+    top: 10.15em;
+    left: 78em;
+    height: 306px;
+    width: 204.4px;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #FF00FF;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+h5:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+h5:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+h5 span{
+    position: absolute;
+    display: block;
+}
+h5 span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,hotpink);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+h5 span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,hotpink);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+h5 span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,hotpink);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+h5 span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,hotpink);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}

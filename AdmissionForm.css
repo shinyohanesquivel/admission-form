@@ -1,0 +1,287 @@
+body{
+	background-color:rgb(97, 121, 221);
+}
+h2{
+  margin-top: -2.5em;
+  margin-bottom: 1em;
+  left: 6.5em;
+  top: 1em;
+	font-size:70px;
+	text-align: center;
+  color: rgb(0, 0, 120);
+  font-family: 'Bebas Neue', cursive;
+  position: relative;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(#03AC13, #03AC13);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+   transition: background-size .7s, background-position .5s ease-in-out;
+}
+h2:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
+h3{
+  margin-top: 3em;
+  margin-bottom: 1em;
+	margin-left: 1em;
+  left: 8em;
+	font-size:50px;
+	text-align: center;
+  color: rgb(0, 0, 120);
+  font-family: 'Bebas Neue', cursive;
+  position: relative;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(#03AC13, #03AC13);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+   transition: background-size .7s, background-position .5s ease-in-out;
+}
+h3:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
+h4{
+  margin-top: 1em;
+  margin-bottom: 1em;
+	margin-left: 1em;
+  left: 5.3em;
+	font-size:70px;
+	text-align: center;
+  color: rgb(0, 0, 120);
+  font-family: 'Bebas Neue', cursive;
+  position: relative;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(#03AC13, #03AC13);
+  background-size: 50% 10px;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+   transition: background-size .7s, background-position .5s ease-in-out;
+}
+h4:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
+tr{
+	text-align: center;
+}
+
+input{
+	margin-right:;
+}
+.col-3{
+	font-family: Arial Black;
+	color: white;
+	-webkit-text-stroke: 0.1px blue;
+	top:15em;
+	right: 21em;
+	height: 40em;
+	width: 50em;
+}
+.text{
+	font-size: px;
+	color: white;
+}
+.Religion{
+  color: white;
+  margin-left: 1.5em;
+}
+.Age{
+  color: white;
+  margin-left: 1.7em;
+}
+.gender{
+  color: white;
+}
+.popup{
+	top:68em;
+}
+div{
+	top:52em;
+	right: 39em;
+	height: 5em;
+	position: absolute;
+}
+video{
+  position: fixed;
+  right: 0;
+  top: 0.001em;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+label {
+  display: inline-block;
+  width:200px;
+  text-align: right;
+}
+
+.img {
+	bottom: 51em;
+	right: 39em;
+	height: 100px;
+	position: absolute;
+
+}
+.col-footer p{
+	height:;
+	margin-top: 52em;
+	position: relative;
+	top: 20em;
+	text-align: center;
+}
+.nav-item {
+
+	list-style-type:none;
+  display:inline-block;
+  padding:15px 20px;
+  letter-spacing:3px;
+  color:#222222;
+  background:linear-gradient(45deg,,#333333);
+  transition:500ms;
+  text-transform:uppercase;
+  position:relative;
+  z-index:3;
+  cursor:pointer;
+	margin: auto;
+
+}
+col-nav{
+	position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:linear-gradient(45deg,#ffffff,#dddddd);
+  border-radius:5px;
+  padding:6px;
+  box-shadow:0px 20px 50px rgba(255,192,203 ,1 );
+}
+.nav-item a {
+	top:-45em;
+	left: 28em;
+	margin: 15px;
+	right: 20em;
+	position:relative;
+	color: white;
+	text-align:center;
+  	padding: 1.5rem;
+  	cursor: pointer;
+  	text-decoration: none;
+  	font-size: 1.2rem;
+}
+.nav-link:hover{
+	color:blue;
+  font-weight:700;
+}
+.nav-link:hover:before{
+  background:blue;
+  width:100%;
+  opacity:0;
+}
+.nav-link:before{
+  content:'';
+  width:0%;
+  height:100%;
+  position:absolute;
+  top:0%;
+  left:50%;
+  opacity:1;
+  transform:translateX(-50%);
+  background:blue;
+  transition:300ms;
+  z-index:-1;
+}
+a{
+	list-style-type:none;
+  display:inline-block;
+  padding:15px 20px;
+  letter-spacing:3px;
+  color:#222222;
+  background:linear-gradient(45deg,,#333333);
+  transition:500ms;
+  text-transform:uppercase;
+  position:relative;
+  z-index:3;
+  cursor:pointer;
+}
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+.clock {
+    position: relative;
+    top: 0em;
+    bottom: 0em;
+    left: -0.3em;
+    transform: translateX(235%) translateY(-50%);
+    color: #191970;
+    font-size: 40px;
+    font-family: Orbitron;
+    letter-spacing: 5px;  
+
+}
+:root {
+  --hs: 225, 100%;
+  --paper: hsl(var(--hs), 25%);
+  --highlight: hsl(var(--hs), 45%);
+  --shadow: hsl(var(--hs), 15%);
+}
